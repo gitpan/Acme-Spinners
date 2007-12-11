@@ -4,3 +4,5 @@ Revision history for Perl extension Acme::Spinners.
 	- original version; created by h2xs 1.23 with options
 		-AXn Acme::Spinners
 
+0.6 	Dec 11 2007
+	- fixed some bugs caught when uploaded to CPAN.

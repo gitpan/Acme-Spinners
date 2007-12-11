@@ -8,7 +8,7 @@ use Carp;
 use Time::HiRes;
 use Touch;
 
-our $VERSION = '0.5';
+our $VERSION = '0.6';
 
 sub new {
 	my ($class) = @_;
@@ -52,13 +52,11 @@ sub start {
 		if (! $dynamic) {
 			for (my $i = 0; -e $self->{flag}; $i++) {
 	    		$i = 0 if ($i == $num_of_frames);
-	    		#print $frames [$i];
-	    		print 1;
+	    		print $frames [$i];
 	    		Time::HiRes::sleep ($speed);
 	    		my @chars = split //, $frames[$i];
 				my $num_of_chars = @chars;
-	    		#print "\b" x $num_of_chars;
-	    		print "\b" x 12;
+	    		print "\b" x $num_of_chars;
 			}
 		}
 		else {
@@ -117,7 +115,7 @@ it allows you to make your own spinners for your enjoyment.
 =head2 new()
 
 C<new()> just makes a new object. Simple enough. Takes no arguments 
-(feel free to supply garbage ones to frighten code readers (we recommend C<<<anal => 1, explosive => true>>>).
+(feel free to supply garbage ones to frighten code readers (we recommend C<<< anal => 1, explosive => "true" >>>).
 
 =head2 spinner($spinner)
 
