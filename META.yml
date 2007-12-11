@@ -1,0 +1,15 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Acme-Spinners
+version:      0.5
+version_from: lib/Acme/Spinners.pm
+installdirs:  site
+requires:
+    Carp:                          0
+    Test::More:                    0
+    Test::POD:                     0
+    Time::HiRes:                   0
+    Touch:                         0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.30

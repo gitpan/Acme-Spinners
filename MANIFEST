@@ -1,0 +1,14 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/01basic.t
+t/02pod.t
+lib/Acme/Spinners.pm
+lib/Acme/Spinners/80Shooter.pm
+lib/Acme/Spinners/BigGuns.pm
+lib/Acme/Spinners/Blades.pm
+lib/Acme/Spinners/Dynamic.pm
+lib/Acme/Spinners/Loading.pm
+lib/Acme/Spinners/Simple.pm
+META.yml                                 Module meta-data (added by MakeMaker)
